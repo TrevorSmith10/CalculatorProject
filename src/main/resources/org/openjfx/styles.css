@@ -1,0 +1,18 @@
+Button{
+-fx-background-color: black;
+-fx-text-align: center;
+-fx-text-fill: white;
+-fx-border-color: green;
+-fx-font-size: 1.5em;
+-fx-border-radius: 10 10 10 10;
+-fx-background-radius: 10 10 10 10;
+}
+Button:pressed{
+-fx-background-color: green;
+}
+
+TextField{
+-fx-font-size: 2.25em;
+}
+
+

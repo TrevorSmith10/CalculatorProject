@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:id="gridPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="306.00"
+          minWidth="204.0"
+          prefHeight="288.0" prefWidth="208.0" style="-fx-background-color: DARKSLATEGREY; -fx-border-color: green;"
+          stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="org.openjfx.Controller"
+          onKeyReleased="#acceptKeyboardInput" onKeyPressed="#handleKeyPressed">
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4" GridPane.hgrow="ALWAYS"
+               GridPane.vgrow="ALWAYS" onKeyPressed="#acceptKeyboardInput">
+      <children>
+         <TextField fx:id="textFieldDisplay" editable="false" alignment="CENTER_RIGHT"
+                    maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="196.0"
+                    AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0"
+                    AnchorPane.topAnchor="2.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0"
+               prefWidth="200.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="TS"
+                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0"
+               prefWidth="200.0" GridPane.rowIndex="2">
+      <children>
+         <Button fx:id="sevenButton" onAction="#handleClick" text="7" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3"
+               GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="fourButton" onAction="#handleClick" onKeyPressed="#handleKeyPressed" text="4"
+                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4"
+               GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="oneButton" onAction="#handleClick" text="1" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5"
+               GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="plusMinusButton" onAction="#handleClick" text="+-" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="ceButton" onAction="#handleClick" text="CE" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="eightButton" onAction="#handleClick" text="8" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="fiveButton" onAction="#handleClick" text="5" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="twoButton" onAction="#handleClick" text="2" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="zeroButton" onAction="#handleClick" text="0" AnchorPane.bottomAnchor="2.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="backButton" onAction="#handleClick" text="BACK" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="nineButton" onAction="#handleClick" text="9" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="sixButton" onAction="#handleClick" text="6" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="threeButton" onAction="#handleClick" text="3" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="decimalButton" onAction="#handleClick" text="." AnchorPane.bottomAnchor="2.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="divideButton" onAction="#handleClick" text="/" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="multiplyButton" onAction="#handleClick" text="*" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="minusButton" onAction="#handleClick" text="-" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="plusButton" onAction="#handleClick" text="+" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS"
+               GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+      <children>
+         <Button fx:id="equalsButton" onAction="#handleClick" text="=" AnchorPane.bottomAnchor="2.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0"/>
+      </children>
+   </AnchorPane>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="1.7976931348623157E308" minWidth="50.0" percentWidth="25.0" prefWidth="50.0"/>
+      <ColumnConstraints maxWidth="1.7976931348623157E308" minWidth="50.0" percentWidth="25.0" prefWidth="50.0"/>
+      <ColumnConstraints maxWidth="1.7976931348623157E308" minWidth="50.0" percentWidth="25.0" prefWidth="50.0"/>
+      <ColumnConstraints maxWidth="1.7976931348623157E308" minWidth="50.0" percentWidth="25.0" prefWidth="50.0"/>
+      <ColumnConstraints/>
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" percentHeight="16.66" prefHeight="30.0"/>
+      <RowConstraints minHeight="50.0" percentHeight="16.66" prefHeight="50.0"/>
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="50.0" percentHeight="16.66" prefHeight="50.0"/>
+      <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+      <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+      <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+   </rowConstraints>
+</GridPane>
